@@ -133,7 +133,7 @@ watch(
   () => {
     state.code = getDefaultCode();
     state.opsFromStorage = getFromStorage();
-  }
+  },
 );
 
 onMounted(() => {

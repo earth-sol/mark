@@ -76,7 +76,9 @@ const props = defineProps(["onClose"]);
   min-width: 50%;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .modal-content .modal-header {
@@ -159,11 +161,11 @@ input[type="checkbox"] {
   background: var(--text);
 }
 
-.checkbox-container .checkbox-label { 
+.checkbox-container .checkbox-label {
   margin-left: 2rem;
 }
 
-input[type="checkbox"]:checked ~ .checkbox > .checkbox-overlay{
-  opacity:1
+input[type="checkbox"]:checked ~ .checkbox > .checkbox-overlay {
+  opacity: 1;
 }
 </style>

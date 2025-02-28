@@ -29,7 +29,7 @@ export const deltaToMarkdown = (delta) => {
           ? d.insert
           : d.insert && d.insert.value
             ? d.insert.value
-            : ""
+            : "",
       )
       .join("");
     return `<pre data-language="${data.op.attributes["code-block"]}"><code>${codeContent}</code></pre>`;
