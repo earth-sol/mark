@@ -1,4 +1,4 @@
-FROM node:18-alpine as build-stage
+FROM node:24-alpine as build-stage
 WORKDIR /app
 COPY package*.json ./
 COPY pnpm-lock.yaml ./
